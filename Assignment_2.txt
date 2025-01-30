@@ -1,0 +1,98 @@
+eventin.php: This is the entry point of the plugin.
+
+autoloader.php: This file automatically loads PHP classes without requiring multiple require or include statements.
+
+bootstrap.php – it initializes the Plugin, it loads core functionalities,it sets up hooks, actions, and filters.
+
+index.php:  For security reasons, this file prevents direct access to the plugin folder.
+
+wpml-config.xml: is used for WPML (WordPress Multilingual Plugin) compatibility. It helps WPML understand how to translate the plugin's content properly.
+
+jsconfig.json: it defines base URL for imports
+
+assets file: contains CSS, JavaScript, images, fonts, etc.
+
+languages folder contains eventin.pot (Portable Object Template) is a translation template file used for making the Eventin plugin multilingual. It contains all the translatable strings used in the plugin.
+
+uninstall.php (Runs when the plugin is deleted from WordPress)
+
+templates folder
+
+
+  archive-event.php:It's function/feautures:
+    Includes Eventin’s template functions.
+    Allows users to search events.
+    Uses WP_Query to get events.
+    Loops through events and outputs them and shows a message if no events exist.
+  	Allows extra customization.
+
+
+  archive-speaker.php: displays a list of all speakers in an event management system.
+    Allows inserting content before the main layout.
+    Defines a Bootstrap-like grid for speaker items.
+    Allows content before listing speakers.
+    Retrieves speaker posts dynamically.
+    Shows speaker’s title as a link.
+    Allows customization of the title.
+    Shows the speaker's role/job title.
+    Allows adding extra details per speaker.
+    Allows modifications after all speakers are displayed.
+
+
+  event-one.php has the following functions; 
+    Prevents unauthorized access.
+    Retrieves event title, logo, and content.
+    Ensures correct event template.
+    Section	Displays event title with logo.
+    Shows event thumbnail if available.
+    Displays event description.
+    additional event details (date, location, speakers).
+
+
+  speaker-one.php/speaker-two-lite.php
+    Retrieves speaker name, bio, email, and picture.
+    Displays speaker avatar and metadata.
+  	Finds events where the speaker is scheduled.
+    Lists session details (time, room, topic).
+    creates a speaker detail page for an event management system.
+
+
+  etn-404.php: It's feautures
+    If the request is NOT an AJAX request, it loads the WordPress header
+    Displays a custom 404 error page
+    Provides a link to return to an archive page
+    Loads the WordPress footer
+
+
+
+base folder: it contains foundational files that support the plugin’s core functionalities, handle administrative tasks like settings management and event creation
+
+  actions.PHP: responsible for handling form actions and settings storage for the Eventin plugin.
+
+  activate.php:It handles the actions that need to occur when the plugin is activated.
+
+  deactivate.php file is responsible for actions that should take place when the plugin is deactivated.
+
+  api-handler.php: responsible for handling API interactions for the plugin.
+
+  installer.php: responsible for performing installation routines when the plugin is first installed.
+
+  metabox.php: like when editing posts or custom post types, it is used to define and manage the metaboxes that appear on the WordPress edit screens.
+
+  common.php: it contains shared functions or utilities used by other parts of the plugin, it contains functions that are used throughout the plugin for common operations.
+
+  input.php: It define how input data from forms  are handled before being stored or processed further. It ensures that user input is safe and sanitized to prevent security issues.
+
+  post-model.php: It handles interactions with the WordPress database related to the event data.
+
+
+
+
+
+
+
+
+
+
+
+
