@@ -27,7 +27,7 @@ templates folder
   	Allows extra customization.
 
 
-  archive-speaker.php: displays a list of all speakers in an event management system.
+  archive-speaker.php: displays a list of all speakers in an event management system. it's code contains futures that;
     Allows inserting content before the main layout.
     Defines a Bootstrap-like grid for speaker items.
     Allows content before listing speakers.
@@ -86,6 +86,17 @@ base folder: it contains foundational files that support the plugin’s core fun
   post-model.php: It handles interactions with the WordPress database related to the event data.
 
 
+
+widgets folder
+
+  advanced search folder
+    Provides an advanced search form for events, allowing users to search by: Event name (input field), Event category (dropdown), Event location (dropdown).
+    Displays a search button to trigger the search.
+
+  event-calender folder
+    Displays a calendar of events, allowing users to view events by date.
+    Provides options to filter events by category and control the number of events displayed.
+    Supports recurring events (parent and child events).
 
 
 
